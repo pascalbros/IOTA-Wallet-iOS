@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5004F62D20092B7100F64891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004F62C20092B7100F64891 /* AppDelegate.swift */; };
+		5004F63220092B7100F64891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5004F63020092B7100F64891 /* Main.storyboard */; };
+		5004F63420092B7100F64891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5004F63320092B7100F64891 /* Assets.xcassets */; };
+		5004F63720092B7100F64891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5004F63520092B7100F64891 /* LaunchScreen.storyboard */; };
+		5004F64220092B7100F64891 /* IOTA_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004F64120092B7100F64891 /* IOTA_WalletTests.swift */; };
+		5004F66420092CC700F64891 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004F66320092CC700F64891 /* LoginViewController.swift */; };
+		5004F66C2009435D00F64891 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5004F66B2009435D00F64891 /* QRScannerController.swift */; };
+		500D9A1A20096F300040D274 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500D9A1920096F300040D274 /* BalanceViewController.swift */; };
+		50363C2D201D5AF200E2B621 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50363C2C201D5AF200E2B621 /* Utils.swift */; };
+		506C8653201E459C00E6394E /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C8652201E459C00E6394E /* UserSession.swift */; };
+		506C865B201E4C4C00E6394E /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C865A201E4C4C00E6394E /* SendViewController.swift */; };
+		506C865D201E4C5B00E6394E /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C865C201E4C5B00E6394E /* ReceiveViewController.swift */; };
+		506C8662201E841700E6394E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C8661201E841700E6394E /* MainViewController.swift */; };
+		50D9164420156954000BEC42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9164320156954000BEC42 /* Constants.swift */; };
+		50D9164B20157619000BEC42 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9164A20157619000BEC42 /* TransactionTableViewCell.swift */; };
+		50E32CE52020D755001017D6 /* Code New Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50E32CE42020D754001017D6 /* Code New Roman.ttf */; };
+		50E32CE82020FC3E001017D6 /* IotaValuePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E32CE72020FC3E001017D6 /* IotaValuePicker.swift */; };
+		50E32CF22021338F001017D6 /* BalanceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E32CF12021338F001017D6 /* BalanceLabel.swift */; };
+		50E32CF420213C4A001017D6 /* QRCodeScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E32CF320213C4A001017D6 /* QRCodeScanView.swift */; };
+		50FCFD142027DA2F0042D866 /* ReviewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCFD132027DA2F0042D866 /* ReviewPaymentViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5004F63E20092B7100F64891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5004F62120092B7100F64891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5004F62820092B7100F64891;
+			remoteInfo = "IOTA Wallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		500D9A1720095D780040D274 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5004F62920092B7100F64891 /* IOTA Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOTA Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5004F62C20092B7100F64891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5004F63120092B7100F64891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5004F63320092B7100F64891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5004F63620092B7100F64891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5004F63820092B7100F64891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5004F63D20092B7100F64891 /* IOTA WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOTA WalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5004F64120092B7100F64891 /* IOTA_WalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTA_WalletTests.swift; sourceTree = "<group>"; };
+		5004F64320092B7100F64891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5004F66320092CC700F64891 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5004F66B2009435D00F64891 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		500D9A1920096F300040D274 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		50363C2C201D5AF200E2B621 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		506C8652201E459C00E6394E /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		506C865A201E4C4C00E6394E /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		506C865C201E4C5B00E6394E /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		506C8661201E841700E6394E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		50D9164320156954000BEC42 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		50D9164A20157619000BEC42 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		50E32CE42020D754001017D6 /* Code New Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Code New Roman.ttf"; sourceTree = "<group>"; };
+		50E32CE72020FC3E001017D6 /* IotaValuePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IotaValuePicker.swift; sourceTree = "<group>"; };
+		50E32CF12021338F001017D6 /* BalanceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceLabel.swift; sourceTree = "<group>"; };
+		50E32CF320213C4A001017D6 /* QRCodeScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanView.swift; sourceTree = "<group>"; };
+		50FCFD132027DA2F0042D866 /* ReviewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPaymentViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5004F62620092B7100F64891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5004F63A20092B7100F64891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5004F62020092B7100F64891 = {
+			isa = PBXGroup;
+			children = (
+				5004F62B20092B7100F64891 /* IOTA Wallet */,
+				5004F64020092B7100F64891 /* IOTA WalletTests */,
+				5004F62A20092B7100F64891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5004F62A20092B7100F64891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5004F62920092B7100F64891 /* IOTA Wallet.app */,
+				5004F63D20092B7100F64891 /* IOTA WalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5004F62B20092B7100F64891 /* IOTA Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				50E32CE22020D73D001017D6 /* Assets */,
+				5004F6672009432E00F64891 /* Utils */,
+				506C8651201E455E00E6394E /* Classes */,
+				506C865E201E83C100E6394E /* Main */,
+				5004F65E20092C1800F64891 /* Login */,
+				500D9A1820096F270040D274 /* Balance */,
+				5004F62C20092B7100F64891 /* AppDelegate.swift */,
+				506C8659201E4B5900E6394E /* Receive */,
+				506C8655201E4B5100E6394E /* Send */,
+				5004F63020092B7100F64891 /* Main.storyboard */,
+				5004F63320092B7100F64891 /* Assets.xcassets */,
+				5004F63520092B7100F64891 /* LaunchScreen.storyboard */,
+				5004F63820092B7100F64891 /* Info.plist */,
+			);
+			path = "IOTA Wallet";
+			sourceTree = "<group>";
+		};
+		5004F64020092B7100F64891 /* IOTA WalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				5004F64120092B7100F64891 /* IOTA_WalletTests.swift */,
+				5004F64320092B7100F64891 /* Info.plist */,
+			);
+			path = "IOTA WalletTests";
+			sourceTree = "<group>";
+		};
+		5004F65E20092C1800F64891 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5004F66320092CC700F64891 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5004F6672009432E00F64891 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5004F66B2009435D00F64891 /* QRScannerController.swift */,
+				50D9164320156954000BEC42 /* Constants.swift */,
+				50363C2C201D5AF200E2B621 /* Utils.swift */,
+				50E32CE72020FC3E001017D6 /* IotaValuePicker.swift */,
+				50E32CF12021338F001017D6 /* BalanceLabel.swift */,
+				50E32CF320213C4A001017D6 /* QRCodeScanView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		500D9A1820096F270040D274 /* Balance */ = {
+			isa = PBXGroup;
+			children = (
+				500D9A1920096F300040D274 /* BalanceViewController.swift */,
+				50D9164A20157619000BEC42 /* TransactionTableViewCell.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		506C8651201E455E00E6394E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				506C8652201E459C00E6394E /* UserSession.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		506C8655201E4B5100E6394E /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				506C865A201E4C4C00E6394E /* SendViewController.swift */,
+				50FCFD132027DA2F0042D866 /* ReviewPaymentViewController.swift */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		506C8659201E4B5900E6394E /* Receive */ = {
+			isa = PBXGroup;
+			children = (
+				506C865C201E4C5B00E6394E /* ReceiveViewController.swift */,
+			);
+			path = Receive;
+			sourceTree = "<group>";
+		};
+		506C865E201E83C100E6394E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				506C8661201E841700E6394E /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		50E32CE22020D73D001017D6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				50E32CE32020D746001017D6 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		50E32CE32020D746001017D6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				50E32CE42020D754001017D6 /* Code New Roman.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5004F62820092B7100F64891 /* IOTA Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5004F64620092B7100F64891 /* Build configuration list for PBXNativeTarget "IOTA Wallet" */;
+			buildPhases = (
+				5004F62520092B7100F64891 /* Sources */,
+				5004F62620092B7100F64891 /* Frameworks */,
+				5004F62720092B7100F64891 /* Resources */,
+				500D9A1720095D780040D274 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOTA Wallet";
+			productName = "IOTA Wallet";
+			productReference = 5004F62920092B7100F64891 /* IOTA Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5004F63C20092B7100F64891 /* IOTA WalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5004F64920092B7100F64891 /* Build configuration list for PBXNativeTarget "IOTA WalletTests" */;
+			buildPhases = (
+				5004F63920092B7100F64891 /* Sources */,
+				5004F63A20092B7100F64891 /* Frameworks */,
+				5004F63B20092B7100F64891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5004F63F20092B7100F64891 /* PBXTargetDependency */,
+			);
+			name = "IOTA WalletTests";
+			productName = "IOTA WalletTests";
+			productReference = 5004F63D20092B7100F64891 /* IOTA WalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5004F62120092B7100F64891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Pasquale Ambrosini";
+				TargetAttributes = {
+					5004F62820092B7100F64891 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5004F63C20092B7100F64891 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5004F62820092B7100F64891;
+					};
+				};
+			};
+			buildConfigurationList = 5004F62420092B7100F64891 /* Build configuration list for PBXProject "IOTA Wallet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5004F62020092B7100F64891;
+			productRefGroup = 5004F62A20092B7100F64891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5004F62820092B7100F64891 /* IOTA Wallet */,
+				5004F63C20092B7100F64891 /* IOTA WalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5004F62720092B7100F64891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E32CE52020D755001017D6 /* Code New Roman.ttf in Resources */,
+				5004F63720092B7100F64891 /* LaunchScreen.storyboard in Resources */,
+				5004F63420092B7100F64891 /* Assets.xcassets in Resources */,
+				5004F63220092B7100F64891 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5004F63B20092B7100F64891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5004F62520092B7100F64891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E32CE82020FC3E001017D6 /* IotaValuePicker.swift in Sources */,
+				50E32CF22021338F001017D6 /* BalanceLabel.swift in Sources */,
+				5004F66420092CC700F64891 /* LoginViewController.swift in Sources */,
+				506C8662201E841700E6394E /* MainViewController.swift in Sources */,
+				50D9164B20157619000BEC42 /* TransactionTableViewCell.swift in Sources */,
+				5004F66C2009435D00F64891 /* QRScannerController.swift in Sources */,
+				5004F62D20092B7100F64891 /* AppDelegate.swift in Sources */,
+				506C865D201E4C5B00E6394E /* ReceiveViewController.swift in Sources */,
+				500D9A1A20096F300040D274 /* BalanceViewController.swift in Sources */,
+				506C8653201E459C00E6394E /* UserSession.swift in Sources */,
+				50D9164420156954000BEC42 /* Constants.swift in Sources */,
+				50FCFD142027DA2F0042D866 /* ReviewPaymentViewController.swift in Sources */,
+				506C865B201E4C4C00E6394E /* SendViewController.swift in Sources */,
+				50363C2D201D5AF200E2B621 /* Utils.swift in Sources */,
+				50E32CF420213C4A001017D6 /* QRCodeScanView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5004F63920092B7100F64891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5004F64220092B7100F64891 /* IOTA_WalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5004F63F20092B7100F64891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5004F62820092B7100F64891 /* IOTA Wallet */;
+			targetProxy = 5004F63E20092B7100F64891 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5004F63020092B7100F64891 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5004F63120092B7100F64891 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5004F63520092B7100F64891 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5004F63620092B7100F64891 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5004F64420092B7100F64891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5004F64520092B7100F64891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5004F64720092B7100F64891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRSZN92M5X;
+				INFOPLIST_FILE = "IOTA Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5004F64820092B7100F64891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRSZN92M5X;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "IOTA Wallet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5004F64A20092B7100F64891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRSZN92M5X;
+				INFOPLIST_FILE = "IOTA WalletTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOTA Wallet.app/IOTA Wallet";
+			};
+			name = Debug;
+		};
+		5004F64B20092B7100F64891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRSZN92M5X;
+				INFOPLIST_FILE = "IOTA WalletTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-WalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOTA Wallet.app/IOTA Wallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5004F62420092B7100F64891 /* Build configuration list for PBXProject "IOTA Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5004F64420092B7100F64891 /* Debug */,
+				5004F64520092B7100F64891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5004F64620092B7100F64891 /* Build configuration list for PBXNativeTarget "IOTA Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5004F64720092B7100F64891 /* Debug */,
+				5004F64820092B7100F64891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5004F64920092B7100F64891 /* Build configuration list for PBXNativeTarget "IOTA WalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5004F64A20092B7100F64891 /* Debug */,
+				5004F64B20092B7100F64891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5004F62120092B7100F64891 /* Project object */;
+}
