@@ -2,6 +2,10 @@
 
 The IOTA Wallet is a WiP App, use it at your own risk.
 
+![](./readme-assets/screen1.png)
+![](./readme-assets/screen2.png)
+![](./readme-assets/screen3.png)
+
 ## Install
 
 `pod install`
