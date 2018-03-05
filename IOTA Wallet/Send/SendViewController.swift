@@ -142,7 +142,7 @@ class SendViewController: UIViewController {
 		}
 	}
 	
-	fileprivate func sendTransfer(amountInIota: UInt, toAddress to: String) {
+	fileprivate func sendTransfer(amountInIota: UInt64, toAddress to: String) {
 		
 		let hud = MBProgressHUD.showAdded(to: self.tabBarController!.view, animated: true)
 		hud.backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.6)

@@ -35,14 +35,14 @@ class ReviewPaymentViewController: UIViewController {
     }
     
 	@IBAction func sendPayment(_ sender: Any) {
-		self.sendTransfer(amountInIota: UInt(self.transaction.value), toAddress: self.transaction.address)
+		self.sendTransfer(amountInIota: self.transaction.value, toAddress: self.transaction.address)
 	}
 	
 	@IBAction func dismiss(_ sender: Any) {
 		self.dismiss(animated: true, completion: nil)
 	}
 	
-	fileprivate func sendTransfer(amountInIota: UInt, toAddress to: String) {
+	fileprivate func sendTransfer(amountInIota: UInt64, toAddress to: String) {
 		
 		let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
 		hud.backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.6)

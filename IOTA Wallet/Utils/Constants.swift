@@ -12,11 +12,10 @@ import UIKit
 struct Colors {
 	static let foregroundColor = UIColor.darkGray
 	static let foregroundColorAlt = UIColor.white
-	static let iotaAddress = "https://testnet140.tangle.works"
 	fileprivate init() { }
 }
 
 struct Constants {
-	static let iotaAddress = "https://testnet140.tangle.works"
+	static let iotaAddress = "https://nodes.testnet.iota.org:443"
 	fileprivate init() { }
 }

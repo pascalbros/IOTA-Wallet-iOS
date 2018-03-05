@@ -8,7 +8,7 @@ target 'IOTA Wallet' do
   # Pods for IOTA Wallet
   pod 'Font-Awesome-Swift', '~> 1.7.2'
   pod 'MBProgressHUD', '~> 1.1.0'
-  pod 'IotaKit', '~> 0.5.4'
+  pod 'IotaKit', '~> 0.5.8'
   #pod 'IotaKit', :path => '~/Projects/IotaKit'
   
   target 'IOTA WalletTests' do
