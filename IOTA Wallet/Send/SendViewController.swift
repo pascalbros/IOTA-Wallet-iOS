@@ -68,7 +68,7 @@ class SendViewController: UIViewController {
 		}
 		
 		var isValid = false
-		if IotaAPIUtils.isAddress(address) {
+		if IotaInputValidator.isAddress(address: address) {
 			if IotaChecksum.isAddressWithChecksum(address: address) {
 				if IotaChecksum.isValidChecksum(address: address) {
 					isValid = true
@@ -127,7 +127,7 @@ class SendViewController: UIViewController {
 		guard let address = self.addressLabel.text else {
 			showError(title: "Address error", message: "Please type a valid address"); return
 		}
-		guard IotaAPIUtils.isAddress(address) else {
+		guard IotaInputValidator.isAddress(address: address) else {
 			showError(title: "Address error", message: "Please type a valid address"); return
 		}
 		if amount > 0 {

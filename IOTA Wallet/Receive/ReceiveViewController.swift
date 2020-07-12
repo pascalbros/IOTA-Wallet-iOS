@@ -29,7 +29,7 @@ class ReceiveViewController: UIViewController {
 	
 	fileprivate func setupUI() {
 		self.logoutButton.setFAIcon(icon: .FASignOut, forState: .normal)
-		self.qrCodeImageView.layer.magnificationFilter = kCAFilterNearest
+		self.qrCodeImageView.layer.magnificationFilter = CALayerContentsFilter.nearest
 	}
 	
 	fileprivate func setupAddress() {

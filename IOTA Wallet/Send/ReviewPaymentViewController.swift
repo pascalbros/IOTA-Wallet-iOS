@@ -49,7 +49,6 @@ class ReviewPaymentViewController: UIViewController {
 		hud.mode = .indeterminate
 		hud.animationType = .zoomIn
 		hud.label.text = "Checking account"
-		let startTime = Date()
 		func sendTransfers() {
 			DispatchQueue.main.async {
 				hud.label.text = "Sending transaction"

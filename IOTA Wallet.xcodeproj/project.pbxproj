@@ -27,6 +27,8 @@
 		50E32CF22021338F001017D6 /* BalanceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E32CF12021338F001017D6 /* BalanceLabel.swift */; };
 		50E32CF420213C4A001017D6 /* QRCodeScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E32CF320213C4A001017D6 /* QRCodeScanView.swift */; };
 		50FCFD142027DA2F0042D866 /* ReviewPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FCFD132027DA2F0042D866 /* ReviewPaymentViewController.swift */; };
+		657FB6113246E18909F9219B /* Pods_IOTA_WalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946859EF7575478F2BB3638F /* Pods_IOTA_WalletTests.framework */; };
+		67182B0A0572A9A27F4A8508 /* Pods_IOTA_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190D28D87286D18AEFF8746E /* Pods_IOTA_Wallet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		190D28D87286D18AEFF8746E /* Pods_IOTA_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTA_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BACF209C80342DA0473DBE8 /* Pods-IOTA WalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTA WalletTests.release.xcconfig"; path = "Target Support Files/Pods-IOTA WalletTests/Pods-IOTA WalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		5004F62920092B7100F64891 /* IOTA Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOTA Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5004F62C20092B7100F64891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5004F63120092B7100F64891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +81,10 @@
 		50E32CF12021338F001017D6 /* BalanceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceLabel.swift; sourceTree = "<group>"; };
 		50E32CF320213C4A001017D6 /* QRCodeScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanView.swift; sourceTree = "<group>"; };
 		50FCFD132027DA2F0042D866 /* ReviewPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPaymentViewController.swift; sourceTree = "<group>"; };
+		946859EF7575478F2BB3638F /* Pods_IOTA_WalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOTA_WalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EFA136AD576D09C5803C51 /* Pods-IOTA Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTA Wallet.debug.xcconfig"; path = "Target Support Files/Pods-IOTA Wallet/Pods-IOTA Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		F4EE6FDE31E789028DE70FEE /* Pods-IOTA WalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTA WalletTests.debug.xcconfig"; path = "Target Support Files/Pods-IOTA WalletTests/Pods-IOTA WalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B586FCF2794956DAC1D550 /* Pods-IOTA Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOTA Wallet.release.xcconfig"; path = "Target Support Files/Pods-IOTA Wallet/Pods-IOTA Wallet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67182B0A0572A9A27F4A8508 /* Pods_IOTA_Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657FB6113246E18909F9219B /* Pods_IOTA_WalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +113,8 @@
 				5004F62B20092B7100F64891 /* IOTA Wallet */,
 				5004F64020092B7100F64891 /* IOTA WalletTests */,
 				5004F62A20092B7100F64891 /* Products */,
+				CB28B661D71DB42BBBCEFCCA /* Pods */,
+				B425498149BA0F4958788B70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +235,26 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B425498149BA0F4958788B70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190D28D87286D18AEFF8746E /* Pods_IOTA_Wallet.framework */,
+				946859EF7575478F2BB3638F /* Pods_IOTA_WalletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB28B661D71DB42BBBCEFCCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6EFA136AD576D09C5803C51 /* Pods-IOTA Wallet.debug.xcconfig */,
+				F7B586FCF2794956DAC1D550 /* Pods-IOTA Wallet.release.xcconfig */,
+				F4EE6FDE31E789028DE70FEE /* Pods-IOTA WalletTests.debug.xcconfig */,
+				4BACF209C80342DA0473DBE8 /* Pods-IOTA WalletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,10 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5004F64620092B7100F64891 /* Build configuration list for PBXNativeTarget "IOTA Wallet" */;
 			buildPhases = (
+				F7F37419916B1369398E9E38 /* [CP] Check Pods Manifest.lock */,
 				5004F62520092B7100F64891 /* Sources */,
 				5004F62620092B7100F64891 /* Frameworks */,
 				5004F62720092B7100F64891 /* Resources */,
 				500D9A1720095D780040D274 /* Embed Frameworks */,
+				72DEF85FE6FEBBED453FD304 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5004F64920092B7100F64891 /* Build configuration list for PBXNativeTarget "IOTA WalletTests" */;
 			buildPhases = (
+				D0953320E18FC96BFFE41FB7 /* [CP] Check Pods Manifest.lock */,
 				5004F63920092B7100F64891 /* Sources */,
 				5004F63A20092B7100F64891 /* Frameworks */,
 				5004F63B20092B7100F64891 /* Resources */,
@@ -269,15 +304,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Pasquale Ambrosini";
 				TargetAttributes = {
 					5004F62820092B7100F64891 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 					};
 					5004F63C20092B7100F64891 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5004F62820092B7100F64891;
 					};
@@ -322,6 +359,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72DEF85FE6FEBBED453FD304 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOTA Wallet/Pods-IOTA Wallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/IotaKit/IotaKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IotaKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOTA Wallet/Pods-IOTA Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0953320E18FC96BFFE41FB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOTA WalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7F37419916B1369398E9E38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOTA Wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5004F62520092B7100F64891 /* Sources */ = {
@@ -398,6 +504,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -405,6 +512,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -455,6 +563,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -462,6 +571,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -493,8 +603,8 @@
 		};
 		5004F64720092B7100F64891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EFA136AD576D09C5803C51 /* Pods-IOTA Wallet.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NRSZN92M5X;
@@ -503,15 +613,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		5004F64820092B7100F64891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B586FCF2794956DAC1D550 /* Pods-IOTA Wallet.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NRSZN92M5X;
@@ -521,15 +631,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		5004F64A20092B7100F64891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4EE6FDE31E789028DE70FEE /* Pods-IOTA WalletTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NRSZN92M5X;
@@ -537,7 +647,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-WalletTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOTA Wallet.app/IOTA Wallet";
 			};
@@ -545,8 +655,8 @@
 		};
 		5004F64B20092B7100F64891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BACF209C80342DA0473DBE8 /* Pods-IOTA WalletTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NRSZN92M5X;
@@ -554,7 +664,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pasqualeambrosini.IOTA-WalletTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOTA Wallet.app/IOTA Wallet";
 			};

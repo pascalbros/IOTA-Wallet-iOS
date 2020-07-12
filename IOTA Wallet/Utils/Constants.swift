@@ -16,6 +16,6 @@ struct Colors {
 }
 
 struct Constants {
-	static let iotaAddress = "https://peanut.iotasalad.org:14265"
+	static let iotaAddress = "https://nodes.thetangle.org:443"
 	fileprivate init() { }
 }

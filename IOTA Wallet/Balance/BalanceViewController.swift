@@ -33,7 +33,6 @@ class BalanceViewController: UIViewController {
 		for a in UserSession.current.account.addresses {
 			print("\(a.hash) \(a.canSpend!)")
 		}
-		print(ProcessInfo.processInfo.activeProcessorCount)
     }
 	
 	fileprivate func setupUI() {
@@ -95,16 +94,9 @@ class BalanceViewController: UIViewController {
 	func setupHistory() {
 		self.setupBalance()
 		
-		var txs = UserSession.current.account.addresses.flatMap { (address) -> [IotaTransaction] in
-			return address.transactions!
-		}
-		
-		txs.sort { (tx1, tx2) -> Bool in
-			return tx1.timestamp > tx2.timestamp
-		}
-		txs = txs.filter { (tx) -> Bool in
-			return tx.value != 0
-		}
+		var txs = UserSession.current.account.addresses.flatMap { $0.transactions ?? [] }
+		txs = txs.filter { $0.value != 0 }
+		txs.sort { $0.timestamp > $1.timestamp }
 		
 		self.transactions = IotaAPIUtils.historyTransactions(addresses: UserSession.current.account.addresses).reversed()
 		self.rawTransactions = self.transactions.map { $0 }

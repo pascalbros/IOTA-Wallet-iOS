@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
 		self.logoImageView.tintColor = Colors.foregroundColor
 		self.qrButton.setFAIcon(icon: .FAQrcode, forState: .normal)
 		self.qrButton.setTitleColor(Colors.foregroundColor, for: .normal)
-		self.seedTextField.attributedPlaceholder = NSAttributedString(string:self.seedTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: Colors.foregroundColor])
+		self.seedTextField.attributedPlaceholder = NSAttributedString(string:self.seedTextField.placeholder!, attributes: [NSAttributedString.Key.foregroundColor: Colors.foregroundColor])
 		self.seedTextField.textColor = Colors.foregroundColor
 		self.seedTextField.text = "DOWOCCYJILZYRVCMDKWOMWHMFB9KGGBNVXJSAXRBQJJOSIC9XQIYAFJSZPSPKYXWGAH9DRQSBY9PAGHUA"
 		self.seedTextField.delegate = self
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
 	@objc func openQrCodeReader() {
 		let scanner = QRCodeScanView(frame: self.view.bounds)
 		scanner.onString = { qrcode in
-			if IotaAPIUtils.isSeed(qrcode) {
+			if IotaInputValidator.isSeed(seed: qrcode) {
 				self.onQRCodeReceived(qrCode: qrcode)
 			}
 		}
@@ -168,7 +168,7 @@ extension LoginViewController: UITextFieldDelegate {
 		let currentText = textField.text ?? ""
 		let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
 		if newText.count > 0 {
-			return IotaAPIUtils.isSeed(newText)
+			return IotaInputValidator.isSeed(seed: newText)
 		}
 		return true
 	}
